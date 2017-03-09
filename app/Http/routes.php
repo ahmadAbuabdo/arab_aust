@@ -4,8 +4,8 @@ Route::get('/', function () {
 });
 
 // Authentication routes...
-get('admin', 'Auth\AuthController@getLogin')->name('login');
-post('admin', 'Auth\AuthController@postLogin')->name('post_login');
+get('login', 'Auth\AuthController@getLogin')->name('login');
+post('login', 'Auth\AuthController@postLogin')->name('post_login');
 get('logout', 'Auth\AuthController@getLogout')->name('logout');
 
 // Password reset routes...
