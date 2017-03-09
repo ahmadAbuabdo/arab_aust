@@ -1,0 +1,3 @@
+<?php
+
+// Portal home section
