@@ -6,9 +6,9 @@
 **************************/
 
 body {
-  background: #fff;
-  font-family: 'Open Sans', sans-serif;
-  color:#4e4e4e;
+  background: hsl(0, 0%, 91%) none repeat scroll 0 0;
+  color: hsl(0, 0%, 31%);
+  font-family: "Open Sans",sans-serif;
   line-height: 22px;
 }
 
@@ -47,7 +47,7 @@ h4{
 }
 
 a {
-  color: #c52d2f;
+  color: hsl(0, 0%, 7%);
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -186,10 +186,10 @@ body > section {
 }
 
 .top-bar {
-  padding: 10px 0;
-  background: #ccc;
-  border-bottom:5px solid #c52d2f !important;
+  background: hsl(0, 0%, 80%) none repeat scroll 0 0;
+  border-bottom: 5px solid hsl(196, 95%, 45%) !important;
   line-height: 28px;
+  padding: 10px 0;
 }
 
 .top-number{
@@ -227,7 +227,7 @@ ul.social-share li a {
 }
 
 ul.social-share li a:hover {
-  background: #c52d2f;
+  background: #06a7e1;
   color: #fff;
 }
 
@@ -268,14 +268,15 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #077937;
+  background: hsl(0, 0%, 91%) none repeat scroll 0 0;
   padding: 15px 0;
   padding-bottom: 0;
 }
 
- .navbar-nav{
+ .navbar-nav {
+  margin-right: 3px;
   margin-top: 12px;
- }
+}
 
 .navbar-nav>li{
   margin-left: 35px;
@@ -286,13 +287,13 @@ input.search-form:hover {
   padding: 5px 12px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #06377b;
   line-height: 24px;
   display: inline-block;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-	background-color: #c52d2f;
+	background-color: #06a7e1;
   color: #fff;
 }
 
@@ -312,7 +313,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #c52d2f;
+  background-color: #06a7e1;
   color: #fff;
 }
 
@@ -483,7 +484,7 @@ input.search-form:hover {
 #main-slider .next {
   position: absolute;
   top: 50%;
-  background-color: #c52d2f;
+  background-color: hsl(0, 0%, 0%);
   color: #fff;
   display: inline-block;
   margin-top: -25px;
@@ -544,8 +545,8 @@ input.search-form:hover {
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  background: #c52d2f;
-  border: 1px solid #c52d2f;
+  background: #06a7e1;
+  border: 1px solid #fff;
   left: -3px;
   top: -3px;
 }
@@ -869,7 +870,7 @@ input.search-form:hover {
 }
 
 .panel-heading.active{
-  background: #077937;
+  background: #06a7e1;
 }
 
 .panel-heading.active .panel-title>a{
@@ -883,16 +884,16 @@ a.accordion-toggle  i{
   margin-top: -10px;
   text-align: center;
   margin-right: -15px;
-  background: #c9c9c9;
+  background: hsl(0, 0%, 65%) none repeat scroll 0 0;
 }
 
 .panel-heading.active a.accordion-toggle i{
-  background: #c52d2f;
+  background: hsl(0, 0%, 65%) none repeat scroll 0 0;
   color: #fff;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
-  background: #c52d2f;
+  background: hsl(0, 0%, 65%) none repeat scroll 0 0;
   color: #fff;
 }
 
@@ -1984,7 +1985,6 @@ ul.social_icons li  a i{
 
 .form-group .form-control {
   padding: 7px 12px;
-  border-color:#f2f2f2 slategray;
   box-shadow: none;
 }
 
@@ -2513,7 +2513,7 @@ shortcodes page css
 ************************/
 #bottom {
   background: #f5f5f5;
-  border-bottom: 5px solid #c52d2f;
+  border-bottom: 5px solid hsl(196, 96%, 45%) !important;
   font-size: 14px;
 }
 
@@ -2585,11 +2585,15 @@ shortcodes page css
 }
 
 .titleProducts {
-  background-color: hsl(359, 63%, 47%);
-  color: hsl(0, 0%, 100%);
-  font-size: 18px;
-  text-align: center;
-  text-transform: capitalize;
+ color: hsl(199, 100%, 45%);
+font-size: 36px;
+font-stretch: normal;
+font-style: normal;
+font-weight: normal;
+letter-spacing: -0.5px;
+line-height: 1.17;
+margin: 0;
+text-align: left;
 }
 
 .products_img {
@@ -2616,17 +2620,49 @@ shortcodes page css
   float:left;
 }
 
-
 .rightBlock-contact {
-  margin-right: 8.333333333333332% !important;
   margin-left: 0 !important;
+  margin-right: 97px !important;
 }
 
 
  @media screen and (max-width:767px) {
-  #main-slider .carousel .item.active {
+/*  #main-slider .carousel .item.active {
     background-size:191% 100% !important;
+}*/
+
+#header .navbar-header {
+  width: 100% !important;
 }
+
+/*.rightBlock-contact {
+  margin-left: 0 !important;
+  margin-right: 8.33333% !important;
+}*/
+
+
+.contact-wrap .form-group label {
+  padding-left: 0;
+}
+
+.row.contact-wrap {
+  margin: 0 !important;
+}
+
+ #main-slider .carousel .item {
+  height: 400px;
+  }
+}
+
+
+@media screen and (max-width:450px) and (min-width:320px) {
+   #main-slider .carousel .item {
+  height: 320px;
+  }
+}
+
+.rightStyle div.top-number p {
+  width: 129px ;
 }
 
 .img-left{
@@ -2647,4 +2683,122 @@ shortcodes page css
 
 .colorStyle span {
   color: #ffffff !important;
+}
+/*****************************************************************************/
+/*.in ul.nav.navbar-nav li a {
+  
+}
+
+.in ul.nav.navbar-nav li {
+  
+}*/
+
+@media screen and (max-width:439px) and (min-width:374px) {
+  .panel-title a.accordion-toggle.collapsed,
+  .panel-heading.active .panel-title > a {
+  font-size: 13px;
+  }
+}
+
+@media screen and (max-width:373px) and (min-width:320px) {
+
+  .panel-title a.accordion-toggle.collapsed,
+  .panel-heading.active .panel-title > a {
+  font-size: 11px;
+  }
+
+  .panel.panel-default div.panel-heading {
+    padding-left: 7px;
+  }
+}
+
+.rightBlock-contact label {
+  width: 100%;
+  text-align: left !important;
+  padding-left: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+  background: hsl(196, 96%, 45%) none repeat scroll 0 0;
+  border-color: hsl(0, 0%, 20%);
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background: hsl(196, 95%, 45%) !important;
+}
+
+.titleProduct h2 {
+  border-bottom: 3px solid;
+  color: hsl(199, 100%, 45%);
+  font-size: 36px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: 1.17;
+  margin: 0 0 15px;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.descriptionProduct p {
+  color: hsl(0, 0%, 30%);
+font-family: open sans;
+font-size: 17px;
+font-stretch: normal;
+font-style: normal;
+font-weight: normal;
+max-height: 110px;
+overflow: hidden;
+text-align: left;
+}
+
+.titleProduct {
+  margin-top: 60px;
+}
+
+.rightBlockProduct img {
+  width: 100%;
+}
+
+.ourProduct-even,
+.ourProduct-odd {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  margin-bottom: 43px;
+  overflow: auto;
+}
+
+.social > a {
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 31px;
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 7px;
+  padding: 2px 3px;
+}
+
+.innerSlider {
+  margin-bottom: 60px;
+}
+
+.gmap-area {
+  background: #fff;
+}
+
+#header .navbar-brand {
+  margin-bottom: 10px;
+}
+
+.innerSlider > img {
+  width: 100%;
+}
+
+
+.panel-img img {
+  float: left;
+  margin: auto;
+  width: 75%;
 }

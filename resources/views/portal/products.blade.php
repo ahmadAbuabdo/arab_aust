@@ -4,45 +4,46 @@
 
 @section('content')
 
+
+
+
+<div class="innerSlider">
+  <img src="/img/main-img-slider.png">
+</div><!--innerSlider-->
+
+<div class="container">
 @foreach($products as $product)
 @if ($product['id'] % 2 == 0) 
-   <div class="mianBlock">
-<div class="container productBlock">
-  <div class="titleProducts">{{ $product[App::getLocale().'_name'] }}</div>
-  <div class="col-lg-4 col-md-4 no-padding">
-    <div class="products_img"> <img class="img-responsive" src="{{ asset('/files/products/' . $product->id . '/' . 'thumb-' . $product->image) }}" style="" alt="{{ $product->name }}" ></div>
-  </div>
-  <div class="col-lg-8 col-md-8">
-    <div class="products_description">
-      <p>
-       {!! $product[App::getLocale().'_description'] !!}
-      </p>
-    </div>
-  </div>
-</div><!--productBlock-->
-
-
+  <div class="ourProduct-odd">
+    <div class="leftBlockProduct col-lg-6">
+        <div class="titleProduct"> <h2>{{ $product[App::getLocale().'_name'] }}</h2></div>
+        <div class="descriptionProduct"> 
+           <p>  {!! $product[App::getLocale().'_description'] !!}
+</p>
+        </div>
+    </div><!--leftBlockProduct-->
+    <div class="rightBlockProduct col-lg-6"> <img src="{{ asset('/files/products/' . $product->id . '/' . 'thumb-' . $product->image) }}" style="" alt="{{ $product->name }}">  </div><!--rightBlockProduct-->
+  </div><!--ourProduct-odd-->
+  
 @else
 
 
-<div class="container productBlock">
-  <div class="titleProducts">{{ $product[App::getLocale().'_name'] }}</div>
-  <div class="col-lg-4 col-md-4 no-padding pull-right">
-    <div class="products_img"><img src="{{ asset('/files/products/' . $product->id . '/' . 'thumb-' . $product->image) }}" style="" alt="{{ $product->name }}"></div>
-  </div>
-  <div class="col-lg-8 col-md-8">
-    <div class="products_description">
-      <p>
-        {!! $product[App::getLocale().'_description'] !!}
-      </p>
-    </div>
-  </div>
-</div><!--productBlock-->
-</div><!--mianBlock-->
 
+  <div class="ourProduct-even">
 
-@endif
+  <div class="rightBlockProduct col-lg-6"><img src="{{ asset('/files/products/' . $product->id . '/' . 'thumb-' . $product->image) }}" style="" alt="{{ $product->name }}">  </div><!--rightBlockProduct-->  
+   <div class="leftBlockProduct col-lg-6">
+        <div class="titleProduct"> <h2>{{ $product[App::getLocale().'_name'] }}</h2></div>
+        <div class="descriptionProduct"> 
+           <p>{!! $product[App::getLocale().'_description'] !!}
+</p>
+        </div>
+    </div><!--leftBlockProduct-->
+
+  </div><!--ourProduct-even-->
+  @endif
 @endforeach
+</div><!--container-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 

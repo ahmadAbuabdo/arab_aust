@@ -3,6 +3,11 @@
 
 @section('content')
 
+
+<div class="innerSlider">
+  <img src="/img/main-img-slider3.png">
+</div><!--innerSlider-->
+
     <section id="portfolio">
         <div class="container">
            <div class="center">

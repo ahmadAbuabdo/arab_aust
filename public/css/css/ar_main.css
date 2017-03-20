@@ -12,6 +12,11 @@ body {
   line-height: 22px;
 }
 
+.arCont {
+  margin-left: 97px !important;
+  margin-right: 0 !important;
+}
+
 h1,
 h2,
 h3,
@@ -201,7 +206,7 @@ body > section {
 }
 
 .social{
-  text-align: left;
+  text-align: left !important;
 }
 
 .social-share{
@@ -426,12 +431,42 @@ input.search-form:hover {
 
 #main-slider .carousel .item.active {
   opacity: 1;
+  background-size: 100% 100%;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
   transition: opacity ease-in-out 500ms;
   z-index: 1;
 }
+
+
+
+ @media screen and (max-width:767px) {
+/*  #main-slider .carousel .item.active {
+    background-size:191% 100% !important;
+}*/
+
+
+.row.contact-wrap {
+  margin: 0 !important;
+}
+
+.rightBlock-contact {
+  float: right !important;
+  width: 100%;
+  margin-right: 0 !important;
+}
+
+ #main-slider .carousel .item {
+  height: 400px;
+  }
+}
+
+@media screen and (max-width:450px) and (min-width:320px) {
+   #main-slider .carousel .item {
+  height: 320px;
+  }
+} 
 
 #main-slider .prev,
 #main-slider .next {
@@ -455,10 +490,10 @@ input.search-form:hover {
   background-color: #000;
 }
 
-#main-slider .prev {
+/*#main-slider .prev {
   right: 10px;
 }
-
+*/
 #main-slider .next {
   left: 10px;
 }
@@ -679,6 +714,8 @@ input.search-form:hover {
 .services-wrap .pull-left {
   margin-left: 20px;
 }
+
+
 
 #middle {
   background: #f2f2f2;
@@ -1938,7 +1975,7 @@ ul.social_icons li  a i{
 
 .form-group .form-control {
   padding: 7px 12px;
-  border-color:#f2f2f2 slategray;
+
   box-shadow: none;
 }
 
@@ -2588,15 +2625,11 @@ shortcodes page css
   float:right !important; 
 }
 
-.rightBlock-contact {
-    margin-right: 8.333333333333332%;
-     margin-left:0 !important;
-    float: right !important;
-} 
 
 .form-horizontal .control-label {
-    text-align: right;
+    text-align: right !important;
     float: right;
+     width: 100%;
 }
 
 .img-left{
@@ -2618,4 +2651,74 @@ shortcodes page css
 
 .imgblock {
   margin-top: 21px;
+}
+
+
+
+i.fa.fa-angle-right.pull-right {
+  float: left !important;
+}
+
+.in ul.nav.navbar-nav li {
+  float: none;
+}
+
+.navbar-collapse.navbar-right.in {
+  width: 100%;
+}
+
+.navbar-inverse .navbar-toggle {
+  float: left;
+}
+
+@media screen and (max-width:768px) {
+  #header .navbar-header {
+    width: 100%;
+  }
+}
+
+.navbar-inverse .navbar-brand {
+  float: right;
+  margin-right: 15px !important;
+}
+
+.rightBlock-contact label {
+  width: 100%;
+  text-align: right; !important;
+  padding-right: 0;
+}
+
+
+.rightStyle div.top-number p {
+  float: right;
+}
+
+.navbar-nav > li {
+  margin-left: 0;
+}
+
+.navbar-nav {
+  margin-left: 3px;
+ margin-right: 0 !important;
+}
+
+.navbar-header {
+  width: 21% !important;
+}
+
+
+.titleProduct h2,
+.descriptionProduct p {
+  text-align: right !important;
+}
+
+.panel-heading a.accordion-toggle i {
+  background: hsl(0, 0%, 65%) none repeat scroll 0 0;
+  color: hsl(0, 0%, 100%);
+  left: 9px;
+  position: absolute;
+}
+
+.panel-img img {
+  float: right !important;
 }

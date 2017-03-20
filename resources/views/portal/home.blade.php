@@ -87,39 +87,7 @@
         </div><!--/.container-->
     </section><!--/#feature-->
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="center">
-               <h2>{{@trans('gallary.gall')}}</h2>
-            </div>
-
-
-            <div class="row">
-                <div class="portfolio-items wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms"">
-                   @foreach($gallerys as $gallery)
-                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                             <img class="img-responsive" src="{{ asset('/files/gallary/' . $gallery->id  . '/' . 'thumb-' . $gallery->image) }}" style="" alt="{{ $gallery->name }}" >
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">about image</a></h3>
-                                    <p>{{$gallery['title']}}</p>
-                                    @if(!empty($gallery->image))
-                                        @if(is_dir(public_path() . '/files/gallary/' . $gallery->id))
-
-                                         <a class="preview" href="{{ asset('/files/gallary/' . $gallery->id . '/' . $gallery->image) }}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                        @endif
-                                    @endif
-                                </div> 
-
-                            </div>
-                        </div>          
-                    </div><!--/.portfolio-item-->
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section><!--/#portfolio-item-->
+   
 
     <section id="services" class="service-item">
             <div class="container">
@@ -178,7 +146,10 @@
                             </div>
                             <div id="collapseTwo1" class="panel-collapse collapse">
                               <div class="panel-body">
-                                {!! $quality[App::getLocale().'_terms'] !!}
+                                
+                              <div class="panel-img">
+                                  <img src="/img/ENJOY.png">
+                              </div><!--innerSlider-->
                               </div>
                             </div>
                           </div>
@@ -216,16 +187,17 @@
        {!! csrf_field() !!}
 
 
+    
     <section id="contact-page">
-        <div class="container wow fadeInDown" >
-            <div class="center wow fadeInDown">        
+        <div class="container">
+            <div class="center">        
                 <h2>{{@trans('contact_us.title_msj')}}</h2>
                 <p class="lead">{{@trans('contact_us.subject')}}</p>
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
                 <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-                    <div class="col-sm-5 col-sm-offset-1 rightBlock-contact">
+                    <div class="col-sm-5 col-sm-offset-1 <?= (App::getLocale() == 'en') ? 'rightBlock-contact' : '' ?> arCont">
                         <div class="form-group">
                         {!! Form::label('name', @trans('contact_us.name').':', ['class' => 'col-sm-2 control-label required ']) !!} 
                         {!! Form::text('title', null, ['class' => 'form-control input-sm']) !!}

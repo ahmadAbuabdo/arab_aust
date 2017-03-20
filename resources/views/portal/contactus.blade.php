@@ -3,6 +3,10 @@
 
 @section('content')
 
+<div class="innerSlider">
+  <img src="/img/main-img-slider2.png">
+</div><!--innerSlider-->
+
     <section id="contact-info">
         
         <div class="gmap-area">
@@ -53,7 +57,7 @@
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
                 <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-                    <div class="col-sm-5 col-sm-offset-1 rightBlock-contact">
+                    <div class="col-sm-5 col-sm-offset-1 <?= (App::getLocale() == 'en') ? 'rightBlock-contact' : '' ?> arCont">
                         <div class="form-group">
                         {!! Form::label('name', @trans('contact_us.name').':', ['class' => 'col-sm-2 control-label required ']) !!} 
                         {!! Form::text('title', null, ['class' => 'form-control input-sm']) !!}

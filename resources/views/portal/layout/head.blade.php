@@ -5,21 +5,23 @@
     <meta name="author" content="">
     <title>Arabust</title>
     
-    <!-- core CSS -->
-    <!-- @if (App::getLocale() == 'ar')
-     	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css" rel="stylesheet">
-    @else
-    	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    @endif -->
     <link href="/css/css/bootstrap.min.css" rel="stylesheet">
+    <!-- core CSS -->
+    @if (App::getLocale() == 'ar')
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css" rel="stylesheet"> -->
+        <link href="/css/css/bootstrap-rtl.css" rel="stylesheet">
+    @else
+        <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+        <link href="/css/css/bootstrap.min.css" rel="stylesheet">
+    @endif
+
     <link href="/css/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/css/animate.min.css" rel="stylesheet">
     <link href="/css/css/prettyPhoto.css" rel="stylesheet">
     @if(App::getLocale() == 'ar')
         <link href="/css/css/ar_main.css" rel="stylesheet">
-    @else
-        <link href="/css/css/en_main.css" rel="stylesheet">
     @endif
+        <link href="/css/css/en_main.css" rel="stylesheet">
     <link href="/css/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
