@@ -17,6 +17,9 @@ return [
     'gallary'               => 'Gallary',  
     'gallary_decs'          => 'Gallaer Studio',
     'gall'                  => 'Gallary',
+    'store'                 =>'Store',
+    'plant'                 =>'Plant',
+    'lab'                   =>'Lab',
 
 
 

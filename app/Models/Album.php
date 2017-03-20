@@ -7,18 +7,17 @@ use Illuminate\Support\Facades\Auth;
 use Admailer\Models\Clients;
 
 
-class Gallary extends Model
+class Album extends Model
 {
-    protected $table = 'gallary';
+    protected $table = 'album';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'image',
         'title',
-        'albumId',
+        'status',
         'created_by',
         'updated_by',
 

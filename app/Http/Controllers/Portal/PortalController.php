@@ -47,7 +47,7 @@ class PortalController extends Controller
      */
     public function gallery()
     { 
-        $gallerys = Gallary::orderBy('id', 'desc')->get();
+        $gallerys = Gallary::get();
         return view('portal.gallery',compact('gallerys'));
     }
 

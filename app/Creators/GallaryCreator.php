@@ -15,7 +15,7 @@ class GallaryCreator {
     public function store($request){
 
         $gallary  = Gallary::create($request->all());
-        
+        // dd($gallary);
         //upload Gallart image
         $gallaryImage   = $request->file('image');
 
@@ -66,7 +66,7 @@ class GallaryCreator {
             } 
         return Gallary::findOrFail($id)->update([
             'title' => $request->get('title'),
-            'url' => $request->get('url'), 
+            'albumId' => $request->get('albumId'), 
             'image' => ($imageName != '') ? $imageName : $gallary->image,
         ]);
     }
