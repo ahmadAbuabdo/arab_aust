@@ -12,14 +12,13 @@
         <div class="container">
            <div class="center">
                <h2>{{@trans('gallary.gall')}}</h2>
-               <p class="lead">{{@trans('gallary.gallary_decs')}}</p>
             </div>
 
             <ul class="portfolio-filter text-center">
-                <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Store</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".html">Plant</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Lab</a></li>
+                <li><a class="btn btn-default active" href="#" data-filter="*">{{@trans('gallary.all_photo')}} </a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">{{@trans('gallary.store')}}</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".html">{{@trans('gallary.plant')}}</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".wordpress">{{@trans('gallary.lab')}}</a></li>
             </ul><!--/#portfolio-filter-->
 
             <div class="row">

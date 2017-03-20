@@ -63,6 +63,7 @@ return [
     'lat'                   =>'Lat',
     'long'                   =>'Long',
     'view'                   =>'View',
+    'our_custumer'          =>'Our Custumer',
 
 ];
 

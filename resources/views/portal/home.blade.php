@@ -59,19 +59,13 @@
                 </div><!--/.item-->
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            @if (App::getLocale()=='en')
+             <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
             <i class="fa fa-chevron-left"></i>
-            @else 
-               <i class="fa fa-chevron-right"></i>
-               @endif
+         
         </a>
         <a class="next hidden-xs" href="#main-slider" data-slide="next">
-        @if (App::getLocale()=='en')
             <i class="fa fa-chevron-right"></i>
-            @else 
-               <i class="fa fa-chevron-left"></i>
-               @endif
+       
 
         </a>
     </section><!--/#main-slider-->
@@ -106,7 +100,7 @@
 
                 <div class="col-sm-12 wow fadeInDown">
                     <div class="accordion">
-                        <h2>Why People like us?</h2>
+                        <h2>{{@trans('common.more_about')}}</h2>
                         <div class="panel-group" id="accordion1">
                           <div class="panel panel-default">
                             <div class="panel-heading active">
@@ -139,7 +133,7 @@
                             <div class="panel-heading">
                               <h3 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
-                                  {{@trans('terms.quality')}}
+                                  {{@trans('gallary.enjoy')}}
                                   <i class="fa fa-angle-right pull-right"></i>
                                 </a>
                               </h3>
@@ -167,7 +161,7 @@
     <section id="partner">
         <div class="container">
             <div class="center wow fadeInDown">
-                <h2>Our Custumer</h2>
+                <h2> {{@trans('common.our_custumer')}}</h2>
             </div>    
 
             <div class="partners">

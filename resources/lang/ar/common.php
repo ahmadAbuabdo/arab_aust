@@ -64,6 +64,10 @@ return [
     //----Delete popup----end
     'cancle_delete'         =>'الغاء',
     'view'                   =>'عرض',
+        'our_custumer'          =>'زبائئنا',
+            'more_about'            =>'معلومات اخرى عنا',
+
+
 
 ];
 

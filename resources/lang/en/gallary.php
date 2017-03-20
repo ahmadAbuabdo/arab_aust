@@ -20,7 +20,8 @@ return [
     'store'                 =>'Store',
     'plant'                 =>'Plant',
     'lab'                   =>'Lab',
-
+    'all_photo'             =>'All Image',
+    'enjoy'                 =>'Enjoy',
 
 
     //----grid labels---- end
